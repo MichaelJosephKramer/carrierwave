@@ -37,7 +37,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency "fog-local"
   s.add_development_dependency "mini_magick"
 
-  if RUBY_ENGINE != 'jruby'
+  if RUBY_ENGINE != 'jruby' && ENV['GITHUB_JOB'] != 'rubocop'
     s.add_development_dependency "rmagick", ">= 2.16"
   end
   s.add_development_dependency "timecop"

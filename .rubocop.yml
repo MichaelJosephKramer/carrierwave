@@ -114,7 +114,7 @@ Naming/FileName:
 Naming/MethodParameterName:
   Enabled: false
 
-Naming/PredicateName:
+Naming/PredicatePrefix:
   Exclude:
     - 'spec/**/*'
     - 'lib/carrierwave/sanitized_file.rb'
